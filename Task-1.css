@@ -1,0 +1,56 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    transition: background 0.3s ease;
+}
+
+header.navbar.scrolled {
+    background: #555;
+}
+
+header.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header.navbar nav ul li {
+    margin: 0 15px;
+}
+
+header.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+header.navbar nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+main {
+    padding-top: 60px; /* To ensure content is not hidden under the fixed header */
+}
+
+section {
+    padding: 50px;
+    margin: 20px 0;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+}
